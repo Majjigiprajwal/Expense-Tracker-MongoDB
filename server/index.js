@@ -11,7 +11,7 @@ const helmet = require('helmet')
 const morgan = require('morgan')
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 443;
 
 const accessLogStream = fs.createWriteStream(path.join(__dirname,'access.log'),{flags :'a'})
 
